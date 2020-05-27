@@ -1,6 +1,7 @@
-ʹ����LSB�㷨����ϢǶ�뵽ͼƬ�У�����������£�
-1.����57117107 �Ե��ԡ�д���ı��ļ�test.txt��׼������ͼ��t1.png
-2.��matlabʵ��LSBǶ���㷨��LSB1������test.txtǶ�뵽t1.png�����ѡ������ص����ͱ���λ��
-3.���Եõ�Ƕ����Ϣ���ͼ��test.png
-��ȡ���̣�
-ֱ������LSB��ȡ�㷨��LSB2�������ɶ�ȡtest.png�����ص���Ϣ��������Ϣ��������ı��ļ�result.txt��
+使用了LSB算法将信息嵌入到图片中，具体过程如下：
+1.将“57117107 赵笛言”写入文本文件test.txt，准备载体图像t1.png
+2.用matlab实现LSB嵌入算法（LSB1），将test.txt嵌入到t1.png中随机选择的像素点的最低比特位中
+3.可以得到嵌入信息后的图像test.png
+
+提取过程：
+直接运行LSB提取算法（LSB2），即可读取test.png中隐藏的信息，而该信息将输出至文本文件result.txt中
